@@ -2,7 +2,7 @@
 
 A browser extension that compares wine and spirits prices on supported Mexican retailer websites with historical price data from enComerciales. Open a product page, click the extension, and review the detected price and available historical comparisons.
 
-The project uses Manifest V3 and connects to the hosted service at `https://encomerciales.com/api`. The repository does not include a local API server or require users to configure a database. Historical results depend on the service being available and having usable records for the product.
+This feature branch adds experimental Firefox support while leaving the default branch unchanged. The project uses Manifest V3 and connects to the hosted service at `https://encomerciales.com/api`. The repository does not include a local API server or require users to configure a database. Historical results depend on the service being available and having usable records for the product.
 
 ## Install in Chrome, Edge, Brave, or Opera
 
@@ -38,9 +38,18 @@ This repository does not currently provide a Chrome Web Store, Edge Add-ons, Bra
 3. Open an individual product page at one of the supported stores below. Refresh the page if it was already open before installation.
 4. Click the enComerciales toolbar icon to view the result.
 
-## Firefox compatibility
+## Firefox testing
 
-Firefox is not currently supported by the package in this repository. Although Firefox supports Manifest V3, this extension's manifest uses a Chromium service worker background, which needs a Firefox compatible background configuration before the add-on can be loaded reliably. There is no Firefox installation path or Firefox Add-ons listing yet. Firefox support requires a separate compatibility change and testing; downloading the current ZIP is not enough.
+This branch adds experimental Firefox support; the default `main` branch remains unchanged. Use Firefox 121 or later. Mozilla Firefox uses the background script entry in this branch's Manifest V3 configuration, while Chromium browsers use the service worker entry.
+
+1. From this branch's GitHub page, click **Code → Download ZIP** and extract the archive.
+2. In Firefox, open `about:debugging#/runtime/this-firefox`.
+3. Choose **This Firefox**, then **Load Temporary Add-on**.
+4. Select `browser-extension/manifest.json` from the extracted branch folder.
+5. Open a supported retailer product page, refresh it, and click the extension icon. Check the API connection from the extension's Options page.
+
+The temporary add-on is removed when Firefox closes. To load code changes during the same session, use **Reload** on the add-on card in `about:debugging`. Temporary loading is for testing; it is not a permanent user installation. See Mozilla's [temporary installation guide](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
+
 
 ## Supported retailers
 
