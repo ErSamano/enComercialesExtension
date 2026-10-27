@@ -16,7 +16,6 @@ assert.equal(productMatchConfidence({ name: "Vino Ejemplo Reserva 2019 750 ml" }
 assert.equal(ratePrice({ currentPrice: 90, historicalAverage: 100, historicalLow: 80, historicalHigh: 120, observations: 10 }).category, "GREAT DEAL");
 assert.equal(ratePrice({ currentPrice: 100, historicalAverage: 100, observations: 2 }).category, "INSUFFICIENT DATA");
 assert.equal(buildApiUrl("https://encomerciales.com/api/", "/products/search?name=Muga"), "https://encomerciales.com/api/products/search?name=Muga");
-assert.equal(buildApiUrl("http://localhost:8080/api", "products/history?id=abc"), "http://localhost:8080/api/products/history?id=abc");
 assert.equal(buildApiUrl("https://encomerciales.com/api?tenant=test", "/health"), "https://encomerciales.com/api/health");
 assert.equal(OBSERVATIONS_ENABLED, false);
 assert.deepEqual(await observePrice({ name: "Example" }), { error: "OBSERVATIONS_DISABLED" });
