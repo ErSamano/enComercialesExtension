@@ -1,0 +1,343 @@
+{
+  "capturedAt": "2026-10-22T02:14:51.951Z",
+  "search": {
+    "request": {
+      "method": "GET",
+      "url": "https://encomerciales.com/api/products/search?name=Whiskey%20Jack%20Daniel%E2%80%99s%20Old%20No.%207%20de%20700%20ml&sku=&gtin=&limit=5",
+      "query": {
+        "name": "Whiskey Jack Daniel’s Old No. 7 de 700 ml",
+        "sku": "",
+        "gtin": "",
+        "limit": "5"
+      }
+    },
+    "httpStatus": 200,
+    "response": {
+      "products": [
+        {
+          "id": "V2hpc2tleSBKYWNrIERhbmllbMOi4oKs4oSicyBPbGQgTm8uIDcgZGUgNzAwIG1s",
+          "name": "Whiskey Jack Danielâ€™s Old No. 7 de 700 ml",
+          "url": "https://www.bodegasalianza.com/whisky-jack-daniels-2005/p",
+          "retailer": "alianza",
+          "type": "Whisky",
+          "currency": "MXN",
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "MEDIUM",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REVIEW_REQUIRED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "UNVERIFIED_PRODUCT_ALIAS",
+            "evidence": [
+              "VOLUME_MATCH",
+              "CATEGORY_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [
+              "BRAND_VERIFICATION",
+              "AGEYEARS_VERIFICATION"
+            ],
+            "conflicts": []
+          }
+        },
+        {
+          "id": "V2hpc2tleSBKYWNrIERhbmllbMOi4oKs4oSicyBIb25leSBUZW5uZXNzZWUgNzAwIG1s",
+          "name": "Whiskey Jack Danielâ€™s Honey Tennessee 700 ml",
+          "url": "https://www.bodegasalianza.com/licor-jack-daniels-honey-22178/p",
+          "retailer": "balianza",
+          "type": "Whisky",
+          "currency": null,
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REVIEW_REQUIRED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "UNVERIFIED_PRODUCT_ALIAS",
+            "evidence": [
+              "VOLUME_MATCH",
+              "CATEGORY_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [
+              "BRAND_VERIFICATION",
+              "AGEYEARS_VERIFICATION"
+            ],
+            "conflicts": []
+          }
+        },
+        {
+          "id": "V2hpc2tleSBKaW0gQmVhbSBCbGFjayA3IEHDg8Kxb3MgS2VudHVja3kgU3RyYWlnaHQgQm91cmJvbiA3NTAgbWw",
+          "name": "Whiskey Jim Beam Black 7 AÃ±os Kentucky Straight Bourbon 750 ml",
+          "url": "https://www.bodegasalianza.com/whiskey-jim-beam-black-7-anos-750-ml/p",
+          "retailer": "balianza",
+          "type": "Whisky",
+          "currency": null,
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REJECTED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "STRUCTURED_ATTRIBUTE_CONFLICT",
+            "evidence": [
+              "CATEGORY_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [],
+            "conflicts": [
+              "VOLUME_CONFLICT"
+            ]
+          }
+        },
+        {
+          "id": "V2hpc2tleSBKaW0gQmVhbSBXaGl0ZSBLZW50dWNreSBTdHJhaWdodCBCb3VyYm9uIDcwMCBtbA",
+          "name": "Whiskey Jim Beam White Kentucky Straight Bourbon 700 ml",
+          "url": "https://www.bodegasalianza.com/whisky-jim-beam-white-700-ml-36357/p",
+          "retailer": "balianza",
+          "type": "Whisky",
+          "currency": null,
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REVIEW_REQUIRED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "UNVERIFIED_PRODUCT_ALIAS",
+            "evidence": [
+              "VOLUME_MATCH",
+              "CATEGORY_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [
+              "BRAND_VERIFICATION",
+              "AGEYEARS_VERIFICATION"
+            ],
+            "conflicts": []
+          }
+        },
+        {
+          "id": "V2hpc2tleSBXb29kZm9yZCBSZXNlcnZlIFN0cmFpZ2h0IEJvdXJib24sIDc1MCBtbA",
+          "name": "Whiskey Woodford Reserve Straight Bourbon, 750 ml",
+          "url": "https://www.elpalaciodehierro.com/woodford-whiskey-woodford-reserve-straight-bourbon-750-ml-16522124.html?cid=114002",
+          "retailer": "palacio",
+          "type": "DestiladosYLicores",
+          "currency": "MXN",
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REJECTED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "STRUCTURED_ATTRIBUTE_CONFLICT",
+            "evidence": [
+              "CATEGORY_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [],
+            "conflicts": [
+              "VOLUME_CONFLICT"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "history": {
+    "request": {
+      "method": "GET",
+      "url": "https://encomerciales.com/api/products/history?id=V2hpc2tleSBKYWNrIERhbmllbMOi4oKs4oSicyBPbGQgTm8uIDcgZGUgNzAwIG1s&confidence=MEDIUM",
+      "query": {
+        "id": "V2hpc2tleSBKYWNrIERhbmllbMOi4oKs4oSicyBPbGQgTm8uIDcgZGUgNzAwIG1s",
+        "confidence": "MEDIUM"
+      }
+    },
+    "httpStatus": 200,
+    "response": {
+      "product": {
+        "name": "Whiskey Jack Danielâ€™s Old No. 7 de 700 ml"
+      },
+      "match": {
+        "confidence": "UNKNOWN",
+        "method": "database-name",
+        "reasonCode": "PRODUCT_NOT_FOUND",
+        "reason": "No database product matched the selected identity.",
+        "requestedConfidence": "MEDIUM",
+        "identity": {
+          "canonicalProductId": null,
+          "status": "NOT_FOUND",
+          "method": "STRUCTURED_ATTRIBUTES",
+          "evidence": [],
+          "missingEvidence": [],
+          "conflicts": []
+        }
+      },
+      "current": null,
+      "statistics": {
+        "observations": 0,
+        "low": null,
+        "high": null,
+        "average": null,
+        "average30d": null,
+        "average90d": null,
+        "average1y": null,
+        "lastUpdated": null,
+        "firstObserved": null,
+        "lastObserved": null,
+        "bestStore": null,
+        "dateOfLow": null,
+        "historicalLow": null,
+        "historicalHigh": null,
+        "historicalAverage": null,
+        "salePercentage": null,
+        "currency": null,
+        "currencyStatus": "UNKNOWN"
+      },
+      "rating": {
+        "category": "INSUFFICIENT DATA",
+        "reason": "Fewer than three trusted observations are available."
+      },
+      "history": [],
+      "stores": []
+    }
+  },
+  "comparison": {
+    "request": {
+      "method": "GET",
+      "url": "https://encomerciales.com/api/products/compare?name=Whiskey%20Jack%20Daniel%E2%80%99s%20Old%20No.%207%20de%20700%20ml&price=378&currency=MXN&store=Bodegas%20Alianza&sku=&gtin=&referencePrice=540&referenceCurrency=MXN&advertisedDiscountPercent=",
+      "query": {
+        "name": "Whiskey Jack Daniel’s Old No. 7 de 700 ml",
+        "price": "378",
+        "currency": "MXN",
+        "store": "Bodegas Alianza",
+        "sku": "",
+        "gtin": "",
+        "referencePrice": "540",
+        "referenceCurrency": "MXN",
+        "advertisedDiscountPercent": ""
+      }
+    },
+    "httpStatus": 200,
+    "response": {
+      "product": {
+        "id": "V2hpc2tleSBKYWNrIERhbmllbMOi4oKs4oSicyBPbGQgTm8uIDcgZGUgNzAwIG1s",
+        "name": "Whiskey Jack Danielâ€™s Old No. 7 de 700 ml",
+        "url": "https://www.bodegasalianza.com/whisky-jack-daniels-2005/p",
+        "retailer": "alianza",
+        "type": "Whisky",
+        "currency": "MXN",
+        "lastUpdated": "2026-10-21",
+        "matchConfidence": "MEDIUM",
+        "matchMethod": "candidate-name",
+        "identity": {
+          "canonicalProductId": null,
+          "status": "REVIEW_REQUIRED",
+          "confidence": "LOW",
+          "method": "STRUCTURED_ATTRIBUTES",
+          "reasonCode": "UNVERIFIED_PRODUCT_ALIAS",
+          "evidence": [
+            "VOLUME_MATCH",
+            "CATEGORY_MATCH",
+            "PACK_MATCH"
+          ],
+          "missingEvidence": [
+            "BRAND_VERIFICATION",
+            "AGEYEARS_VERIFICATION"
+          ],
+          "conflicts": []
+        }
+      },
+      "match": {
+        "confidence": "UNKNOWN",
+        "method": "database-name",
+        "reason": "No database product matched the selected identity.",
+        "identity": {
+          "canonicalProductId": null,
+          "status": "NOT_FOUND",
+          "method": "STRUCTURED_ATTRIBUTES",
+          "evidence": [],
+          "missingEvidence": [],
+          "conflicts": []
+        }
+      },
+      "observed": {
+        "price": 378,
+        "currency": "MXN",
+        "store": "Bodegas Alianza"
+      },
+      "comparison": null,
+      "statistics": {
+        "observations": 0,
+        "low": null,
+        "high": null,
+        "average": null,
+        "average30d": null,
+        "average90d": null,
+        "average1y": null,
+        "lastUpdated": null,
+        "firstObserved": null,
+        "lastObserved": null,
+        "bestStore": null,
+        "dateOfLow": null,
+        "historicalLow": null,
+        "historicalHigh": null,
+        "historicalAverage": null,
+        "salePercentage": null,
+        "currency": null,
+        "currencyStatus": "UNKNOWN"
+      },
+      "rating": {
+        "category": "INSUFFICIENT DATA",
+        "reason": "No database product matched the selected identity."
+      },
+      "history": [],
+      "stores": [],
+      "realDiscount": {
+        "marketRealDiscountPercent": null,
+        "retailerRealDiscountPercent": null,
+        "advertisedDiscountPercent": null,
+        "advertisedDiscountClaimPercent": null,
+        "market": {
+          "historicalAverage": null,
+          "minimum": null,
+          "maximum": null,
+          "observations": 0,
+          "status": "INSUFFICIENT_DATA",
+          "reasonCode": "IDENTITY_CONFIDENCE_INSUFFICIENT",
+          "firstObserved": null,
+          "lastObserved": null,
+          "currency": null
+        },
+        "retailer": {
+          "store": "alianza",
+          "historicalAverage": null,
+          "minimum": null,
+          "maximum": null,
+          "observations": 0,
+          "status": "INSUFFICIENT_DATA",
+          "reasonCode": "IDENTITY_CONFIDENCE_INSUFFICIENT",
+          "firstObserved": null,
+          "lastObserved": null,
+          "currency": null
+        },
+        "advertised": {
+          "advertisedDiscountPercent": null,
+          "advertisedDiscountClaimPercent": null,
+          "status": "UNAVAILABLE",
+          "reasonCode": "INVALID_REFERENCE_PRICE",
+          "source": null
+        }
+      }
+    }
+  }
+}

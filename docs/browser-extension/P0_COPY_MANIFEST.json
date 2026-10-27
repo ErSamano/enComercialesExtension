@@ -1,0 +1,35 @@
+{
+  "destinationRoot": "Existing Windows unpacked extension directory containing manifest.json; obtain from Brave",
+  "files": [
+    {
+      "source": "/home/neto/codex/webBrowserExtention/browser-extension/utils/api.js",
+      "destinationRelative": "utils\\api.js",
+      "sha256": "23b37393bd04eae67e7126cc3a47f6a6c4814f25c3ff04fee4eea83e6ae2b6b2"
+    },
+    {
+      "source": "/home/neto/codex/webBrowserExtention/browser-extension/utils/analysis.js",
+      "destinationRelative": "utils\\analysis.js",
+      "sha256": "0f340515090e92bcb681e7e391a24d5e6f5ad9d5a47cc99ec6d8ef594cbe739e"
+    },
+    {
+      "source": "/home/neto/codex/webBrowserExtention/browser-extension/utils/popup-state.js",
+      "destinationRelative": "utils\\popup-state.js",
+      "sha256": "d67ddc2e33bd358a2f1444677eec8155822fb1620a1ac6d29b07d936ca8b9002"
+    },
+    {
+      "source": "/home/neto/codex/webBrowserExtention/browser-extension/utils/real-discount.js",
+      "destinationRelative": "utils\\real-discount.js",
+      "sha256": "845c0b7563c62f369ba65e031eece823da37e30b5a4623c3479b943ec25970e8"
+    },
+    {
+      "source": "/home/neto/codex/webBrowserExtention/browser-extension/popup/popup.js",
+      "destinationRelative": "popup\\popup.js",
+      "sha256": "9fc3d438a2331947c4a0378f80e34937e3e7078e4490733c0c87551330407cf2"
+    },
+    {
+      "source": "/home/neto/codex/webBrowserExtention/browser-extension/popup/options.js",
+      "destinationRelative": "popup\\options.js",
+      "sha256": "ba49d5c9b59e7a95dfc1eff2077bb55277093bb2f9cc427d3cf7b7b11da149b3"
+    }
+  ]
+}

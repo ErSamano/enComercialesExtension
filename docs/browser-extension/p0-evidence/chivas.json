@@ -1,0 +1,2172 @@
+{
+  "capturedAt": "2026-10-22T02:15:10.970Z",
+  "search": {
+    "request": {
+      "method": "GET",
+      "url": "https://encomerciales.com/api/products/search?name=Chivas%20Regal%2012%20A%C3%B1os%20750%20ml&sku=&gtin=&limit=5",
+      "query": {
+        "name": "Chivas Regal 12 Años 750 ml",
+        "sku": "",
+        "gtin": "",
+        "limit": "5"
+      }
+    },
+    "httpStatus": 200,
+    "response": {
+      "products": [
+        {
+          "id": "V2hpc2t5IENoaXZhcyBSZWdhbCAxMiBBw4PCsW9zIDc1MCBtbCBHcmFiYWRv",
+          "name": "Whisky Chivas Regal 12 AÃ±os 750 ml Grabado",
+          "url": "https://www.bodegasalianza.com/whisky/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "retailer": "balianza",
+          "type": "Whisky",
+          "currency": null,
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "MEDIUM",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REVIEW_REQUIRED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "UNVERIFIED_PRODUCT_ALIAS",
+            "evidence": [
+              "BRAND_MATCH",
+              "AGE_MATCH",
+              "VOLUME_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [
+              "CATEGORY_VERIFICATION"
+            ],
+            "conflicts": []
+          }
+        },
+        {
+          "id": "V2hpc2t5IENoaXZhcyBSZWdhbCAyNSBhw4PCsW9zIDcwMCBtbCA",
+          "name": "Whisky Chivas Regal 25 aÃ±os 700 ml ",
+          "url": "https://www.vinoteca.com/whisky-chivas-regal-25-anos-700-ml/p",
+          "retailer": "vinoteca",
+          "type": "Whisky",
+          "currency": "MXN",
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REJECTED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "STRUCTURED_ATTRIBUTE_CONFLICT",
+            "evidence": [
+              "BRAND_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [],
+            "conflicts": [
+              "AGE_CONFLICT",
+              "VOLUME_CONFLICT"
+            ]
+          }
+        },
+        {
+          "id": "V2hpc2t5IENoaXZhcyBSZWdhbCBFeHRyYSAxMyBBw4PCsW9zIFNoZXJyeSA3NTAgbWwgR3JhYmFkbw",
+          "name": "Whisky Chivas Regal Extra 13 AÃ±os Sherry 750 ml Grabado",
+          "url": "https://www.bodegasalianza.com/whisky/whisky-chivas-regal-extra-13a-sherry-grabado-750-ml-35702/p",
+          "retailer": "balianza",
+          "type": "Whisky",
+          "currency": null,
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REJECTED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "STRUCTURED_ATTRIBUTE_CONFLICT",
+            "evidence": [
+              "BRAND_MATCH",
+              "VOLUME_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [],
+            "conflicts": [
+              "AGE_CONFLICT"
+            ]
+          }
+        },
+        {
+          "id": "Q29nbmFjIE1hcnRlbGwgQmx1ZSBTd2lmdCA3MDAgbWwgY29uIENoaXZhcyAxOCAyMDAgbWw",
+          "name": "Cognac Martell Blue Swift 700 ml con Chivas 18 200 ml",
+          "url": "https://www.bodegasalianza.com/cognac-martell-blue-swift-con-chivas-18-200ml-700-ml/p",
+          "retailer": "alianza",
+          "type": "Cognac",
+          "currency": "MXN",
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REJECTED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "STRUCTURED_ATTRIBUTE_CONFLICT",
+            "evidence": [
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [],
+            "conflicts": [
+              "VOLUME_CONFLICT"
+            ]
+          }
+        },
+        {
+          "id": "Q29nbmFjIE1hcnRlbGwgQmx1ZSBTd2lmdCwgNzAwIG1sICsgV2hpc2t5IENoaXZhcyBSZWdhbCAxOCwgMjAwIG1s",
+          "name": "Cognac Martell Blue Swift, 700 ml + Whisky Chivas Regal 18, 200 ml",
+          "url": "https://www.elpalaciodehierro.com/on/demandware.store/Sites-palacio-MX-Site/es_MX/Product-Show?cid=114002&pid=43924278",
+          "retailer": "palacio",
+          "type": "DestiladosYLicores",
+          "currency": "MXN",
+          "lastUpdated": "2026-10-21",
+          "matchConfidence": "LOW",
+          "matchMethod": "candidate-name",
+          "identity": {
+            "canonicalProductId": null,
+            "status": "REJECTED",
+            "confidence": "LOW",
+            "method": "STRUCTURED_ATTRIBUTES",
+            "reasonCode": "STRUCTURED_ATTRIBUTE_CONFLICT",
+            "evidence": [
+              "BRAND_MATCH",
+              "PACK_MATCH"
+            ],
+            "missingEvidence": [],
+            "conflicts": [
+              "VOLUME_CONFLICT"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "history": {
+    "request": {
+      "method": "GET",
+      "url": "https://encomerciales.com/api/products/history?id=V2hpc2t5IENoaXZhcyBSZWdhbCAxMiBBw4PCsW9zIDc1MCBtbCBHcmFiYWRv&confidence=MEDIUM",
+      "query": {
+        "id": "V2hpc2t5IENoaXZhcyBSZWdhbCAxMiBBw4PCsW9zIDc1MCBtbCBHcmFiYWRv",
+        "confidence": "MEDIUM"
+      }
+    },
+    "httpStatus": 200,
+    "response": {
+      "product": {
+        "name": "Whisky Chivas Regal 12 AÃ±os 750 ml Grabado"
+      },
+      "match": {
+        "confidence": "EXACT",
+        "method": "database-name",
+        "reasonCode": "IDENTITY_VERIFIED",
+        "reason": "The server independently verified the selected database product identity.",
+        "requestedConfidence": "MEDIUM",
+        "identity": {
+          "canonicalProductId": null,
+          "status": "VERIFIED",
+          "method": "STRUCTURED_ATTRIBUTES",
+          "evidence": [
+            "BRAND_MATCH",
+            "AGE_MATCH",
+            "VOLUME_MATCH",
+            "CATEGORY_MATCH",
+            "PACK_MATCH",
+            "NORMALIZED_NAME_EXACT"
+          ],
+          "missingEvidence": [],
+          "conflicts": []
+        }
+      },
+      "current": {
+        "date": "2026-10-21",
+        "price": 540,
+        "salePrice": 900,
+        "store": "alianza",
+        "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+        "currency": "MXN"
+      },
+      "statistics": {
+        "observations": 111,
+        "low": 429,
+        "high": 900,
+        "average": 624.5127927927929,
+        "average30d": 554.1481481481482,
+        "average90d": 600.6550000000003,
+        "average1y": 624.5127927927929,
+        "lastUpdated": "2026-10-21",
+        "firstObserved": "2026-04-20",
+        "lastObserved": "2026-10-21",
+        "bestStore": "alianza",
+        "dateOfLow": "2026-07-30",
+        "historicalLow": 429,
+        "historicalHigh": 900,
+        "historicalAverage": 624.5127927927929,
+        "salePercentage": 40,
+        "currency": "MXN",
+        "currencyStatus": "KNOWN",
+        "candidateRecords": 602,
+        "trustedRecords": 111,
+        "excludedRecords": 491,
+        "sampleStatus": "SUFFICIENT"
+      },
+      "rating": {
+        "category": "GREAT DEAL",
+        "reason": "Current price is 13.5% below the historical average."
+      },
+      "history": [
+        {
+          "date": "2026-04-20",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-12",
+          "price": 585,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-19",
+          "price": 585,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-20",
+          "price": 585,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-21",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-22",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-24",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-27",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-30",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-31",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-01",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-05",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-06",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-07",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-08",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-10",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-11",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-12",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-14",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-16",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-18",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-19",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-21",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-22",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-23",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-26",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-28",
+          "price": 549,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-06-29",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-01",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-02",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-03",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-04",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-05",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-07",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-08",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-09",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-11",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-12",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-13",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-15",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-16",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-17",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-19",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-20",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-21",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-22",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-23",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-24",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-25",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-26",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-27",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-30",
+          "price": 429,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-31",
+          "price": 429,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-01",
+          "price": 429,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-05",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-06",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-07",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-08",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-09",
+          "price": 630,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-10",
+          "price": 900,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-11",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-12",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-13",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-14",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-15",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-17",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-18",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-19",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-20",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-22",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-23",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-24",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-25",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-26",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-27",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-28",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-29",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-30",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-08-31",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-01",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-02",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-03",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-04",
+          "price": 599.04,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-09",
+          "price": 765,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-23",
+          "price": 464,
+          "salePrice": 794,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-24",
+          "price": 464,
+          "salePrice": 794,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-26",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-27",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-28",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-29",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-09-30",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-01",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-02",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-03",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-04",
+          "price": 603,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-05",
+          "price": 675,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-06",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-07",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-08",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-10",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-11",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-12",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-13",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-14",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-15",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-16",
+          "price": 498,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-17",
+          "price": 498,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-18",
+          "price": 498,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-19",
+          "price": 498,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-20",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-21",
+          "price": 540,
+          "salePrice": 900,
+          "store": "alianza",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "currency": "MXN"
+        }
+      ],
+      "stores": [
+        {
+          "store": "alianza",
+          "price": 540,
+          "date": "2026-10-21",
+          "url": "https://www.bodegasalianza.com/whisky-chivas-regal-12-anos-grabado-750-ml-35700/p",
+          "salePrice": 900,
+          "currency": "MXN"
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "request": {
+      "method": "GET",
+      "url": "https://encomerciales.com/api/products/compare?name=Chivas%20Regal%2012%20A%C3%B1os%20750%20ml&price=475&currency=MXN&store=Bodegas%20Alianza&sku=&gtin=&referencePrice=600&referenceCurrency=MXN&advertisedDiscountPercent=",
+      "query": {
+        "name": "Chivas Regal 12 Años 750 ml",
+        "price": "475",
+        "currency": "MXN",
+        "store": "Bodegas Alianza",
+        "sku": "",
+        "gtin": "",
+        "referencePrice": "600",
+        "referenceCurrency": "MXN",
+        "advertisedDiscountPercent": ""
+      }
+    },
+    "httpStatus": 200,
+    "response": {
+      "product": {
+        "id": "V2hpc2t5IENoaXZhcyBSZWdhbCAxMiBBw4PCsW9zLCA3NTAgbWw",
+        "name": "Whisky Chivas Regal 12 AÃ±os, 750 ml",
+        "url": "https://www.elpalaciodehierro.com/on/demandware.store/Sites-palacio-MX-Site/es_MX/Product-Show?cid=114002&pid=12611763",
+        "retailer": "palacio",
+        "type": "DestiladosYLicores",
+        "currency": "MXN",
+        "lastUpdated": "2026-10-18",
+        "matchConfidence": "HIGH",
+        "matchMethod": "candidate-name",
+        "identity": {
+          "canonicalProductId": null,
+          "status": "REVIEW_REQUIRED",
+          "confidence": "LOW",
+          "method": "STRUCTURED_ATTRIBUTES",
+          "reasonCode": "UNVERIFIED_PRODUCT_ALIAS",
+          "evidence": [
+            "BRAND_MATCH",
+            "AGE_MATCH",
+            "VOLUME_MATCH",
+            "PACK_MATCH"
+          ],
+          "missingEvidence": [
+            "CATEGORY_VERIFICATION"
+          ],
+          "conflicts": []
+        }
+      },
+      "match": {
+        "confidence": "EXACT",
+        "method": "database-name",
+        "reason": "The server independently verified the selected database product identity.",
+        "identity": {
+          "canonicalProductId": null,
+          "status": "VERIFIED",
+          "method": "STRUCTURED_ATTRIBUTES",
+          "evidence": [
+            "BRAND_MATCH",
+            "AGE_MATCH",
+            "VOLUME_MATCH",
+            "CATEGORY_MATCH",
+            "PACK_MATCH",
+            "NORMALIZED_NAME_EXACT"
+          ],
+          "missingEvidence": [],
+          "conflicts": []
+        }
+      },
+      "observed": {
+        "price": 475,
+        "currency": "MXN",
+        "store": "Bodegas Alianza"
+      },
+      "comparison": {
+        "currentObservedPrice": 475,
+        "currency": "MXN",
+        "differenceFromHistoricalAverage": -235.39,
+        "differenceFromHistoricalAveragePercent": -33.14,
+        "differenceFromHistoricalLow": -180.85,
+        "differenceFromHistoricalLowPercent": -27.57
+      },
+      "statistics": {
+        "observations": 111,
+        "low": 655.85,
+        "high": 1009,
+        "average": 710.3905405405401,
+        "average30d": 706.2999999999998,
+        "average90d": 706.2999999999998,
+        "average1y": 708.0198863636361,
+        "lastUpdated": "2026-10-18",
+        "firstObserved": "2025-09-24",
+        "lastObserved": "2026-10-18",
+        "bestStore": "palacio",
+        "dateOfLow": "2025-11-29",
+        "historicalLow": 655.85,
+        "historicalHigh": 1009,
+        "historicalAverage": 710.3905405405401,
+        "salePercentage": 30,
+        "currency": "MXN",
+        "currencyStatus": "KNOWN",
+        "candidateRecords": 115,
+        "trustedRecords": 111,
+        "excludedRecords": 4,
+        "sampleStatus": "SUFFICIENT"
+      },
+      "rating": {
+        "category": "GREAT DEAL",
+        "reason": "Current price is within 2% of the historical low."
+      },
+      "history": [
+        {
+          "date": "2025-09-24",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-09-25",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-09-26",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-09-27",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-09-28",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-09-29",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-09-30",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-01",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-02",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-03",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-05",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-06",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-07",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-08",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-09",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-10",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-11",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-12",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-13",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-15",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-19",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-20",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-21",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-23",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-10-26",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-11-29",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-11-30",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-01",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-02",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-03",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-04",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-05",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-06",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-07",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-08",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-09",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/on/demandware.store/Sites-palacio-MX-Site/es_MX/Product-Show?cid=114002&pid=12611763",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-10",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-11",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-12",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-13",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-14",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-15",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-16",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-17",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-18",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-19",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-20",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-21",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-23",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-24",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-25",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-26",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-27",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-28",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-29",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-30",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2025-12-31",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-01",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-02",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-03",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-04",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-05",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-06",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-07",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-08",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-01-09",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-06",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-07",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-08",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-09",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-13",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-14",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-15",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-16",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-17",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-18",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-24",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-25",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-26",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-27",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-02-28",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-01",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-02",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-03",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-04",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-05",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-06",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-07",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-08",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-09",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-10",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-11",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-12",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-13",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-14",
+          "price": 655.85,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-17",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-18",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-19",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-03-20",
+          "price": 1009,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-05-07",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-09",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-12",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-13",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-14",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-15",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-16",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-17",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-07-19",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-12",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-13",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        },
+        {
+          "date": "2026-10-18",
+          "price": 706.3,
+          "salePrice": 1009,
+          "store": "palacio",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "currency": "MXN"
+        }
+      ],
+      "stores": [
+        {
+          "store": "palacio",
+          "price": 706.3,
+          "date": "2026-10-18",
+          "url": "https://www.elpalaciodehierro.com/chivas-regal-whisky-chivas-regal-12-anos-750-ml-12611763.html?cid=114002",
+          "salePrice": 1009,
+          "currency": "MXN"
+        }
+      ],
+      "realDiscount": {
+        "marketRealDiscountPercent": 33.14,
+        "retailerRealDiscountPercent": null,
+        "advertisedDiscountPercent": 20.83,
+        "advertisedDiscountClaimPercent": null,
+        "market": {
+          "historicalAverage": 710.3905405405401,
+          "minimum": 655.85,
+          "maximum": 1009,
+          "observations": 111,
+          "status": "AVAILABLE",
+          "reasonCode": "REAL_DISCOUNT_AVAILABLE",
+          "firstObserved": "2025-09-24",
+          "lastObserved": "2026-10-18",
+          "currency": "MXN"
+        },
+        "retailer": {
+          "store": "alianza",
+          "historicalAverage": null,
+          "minimum": null,
+          "maximum": null,
+          "observations": 0,
+          "status": "INSUFFICIENT_DATA",
+          "reasonCode": "INSUFFICIENT_RETAILER_HISTORY",
+          "firstObserved": null,
+          "lastObserved": null,
+          "currency": null
+        },
+        "advertised": {
+          "advertisedDiscountPercent": 20.83,
+          "advertisedDiscountClaimPercent": null,
+          "status": "AVAILABLE",
+          "reasonCode": "ADVERTISED_DISCOUNT_AVAILABLE",
+          "source": "referencePrice"
+        }
+      }
+    }
+  }
+}

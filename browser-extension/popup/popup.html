@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>enComerciales</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header><h1>enComerciales</h1><a href="options.html" target="_blank">Configuración</a></header>
+    <p id="state" class="state" role="status">Buscando producto…</p>
+    <section id="content" hidden>
+      <h2 id="product-name"></h2>
+      <p id="retailer" class="muted"></p>
+      <div class="price"><span id="current-price"></span><span id="rating" hidden></span></div>
+      <div class="offer-details"><span id="reference-price"></span><span id="advertised-discount"></span></div>
+      <section id="history-status-panel" class="history-status" role="status" aria-live="polite">
+        <strong id="history-status"></strong><p id="history-reason"></p>
+      </section>
+      <section id="history-summary" hidden>
+        <div class="discount-card" id="market-card"><strong id="market-discount"></strong><p id="market-explanation"></p></div>
+        <dl id="history-statistics">
+          <div><dt>Mínimo histórico</dt><dd id="low"></dd></div>
+          <div><dt>Promedio histórico</dt><dd id="average"></dd></div>
+        </dl>
+        <div id="chart-heading" class="chart-heading"><h3>Historial de precios</h3></div>
+        <div id="chart" class="chart" aria-label="Historial de precios"></div>
+        <p id="updated" class="muted"></p>
+        <details id="history-details">
+          <summary>Ver detalles</summary>
+          <dl class="secondary-statistics">
+            <div><dt>Máximo histórico</dt><dd id="high"></dd></div>
+            <div><dt>Observaciones</dt><dd id="observations"></dd></div>
+            <div><dt>Tienda del mínimo</dt><dd id="best-store"></dd><small id="low-date"></small></div>
+          </dl>
+          <div class="discount-card" id="retailer-card"><h3>Comparación con esta tienda</h3><strong id="retailer-discount"></strong><p id="retailer-explanation"></p></div>
+          <p id="comparison-note" class="muted" role="status"></p>
+        </details>
+      </section>
+    </section>
+    <p id="error" class="error" role="alert" hidden></p>
+    <footer><button id="retry" type="button" hidden>Reintentar</button></footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

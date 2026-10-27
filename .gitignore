@@ -1,0 +1,34 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+ec_config.local.php
+.aws/
+.codex/
+.agents/
+
+# Dependencies, generated files, and local datasets
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+coverage/
+test-results/
+playwright-report/
+*.log
+observations.jsonl
+data/
+*.sqlite*
+*.db
+*.zip
+*.crx
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
