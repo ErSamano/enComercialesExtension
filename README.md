@@ -2,7 +2,7 @@
 
 A browser extension that compares wine and spirits prices on supported Mexican retailer websites with historical price data from enComerciales. Open a product page, click the extension, and review the detected price and available historical comparisons.
 
-The project uses Manifest V3 and connects to the hosted service at `https://encomerciales.com/api`. You do not need to install a server or configure a local database. Historical results depend on the service being available and having usable records for the product.
+The project uses Manifest V3 and connects to the hosted service at `https://encomerciales.com/api`. The repository does not include a local API server or require users to configure a database. Historical results depend on the service being available and having usable records for the product.
 
 ## Install in Chrome, Edge, Brave, or Opera
 
