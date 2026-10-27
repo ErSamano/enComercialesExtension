@@ -20,7 +20,6 @@ coverage/
 test-results/
 playwright-report/
 *.log
-observations.jsonl
 data/
 *.sqlite*
 *.db
