@@ -7,9 +7,8 @@ function normalizeApiBaseUrl(value) {
 function isValidApiBaseUrl(value) {
   try {
     const url = new URL(value);
-    const local = url.protocol === "http:" && ["localhost", "127.0.0.1"].includes(url.hostname);
     const production = url.protocol === "https:" && ["encomerciales.com", "www.encomerciales.com"].includes(url.hostname);
-    return local || production;
+    return production;
   } catch {
     return false;
   }
@@ -55,7 +54,7 @@ async function loadOptions() {
   save.addEventListener("click", async () => {
     const apiBaseUrl = normalizeApiBaseUrl(api.value);
     if (!isValidApiBaseUrl(apiBaseUrl)) {
-      status.textContent = "URL no válida: usa localhost en desarrollo o el dominio HTTPS de enComerciales.";
+      status.textContent = "Invalid URL: use the HTTPS enComerciales domain.";
       return;
     }
 
@@ -71,7 +70,7 @@ async function loadOptions() {
   test.addEventListener("click", async () => {
     const apiBaseUrl = normalizeApiBaseUrl(api.value);
     if (!isValidApiBaseUrl(apiBaseUrl)) {
-      status.textContent = "URL no válida: usa localhost en desarrollo o el dominio HTTPS de enComerciales.";
+      status.textContent = "Invalid URL: use the HTTPS enComerciales domain.";
       setDiagnostic(diagnostic, { ok: false, error: "INVALID_API_URL" });
       return;
     }
