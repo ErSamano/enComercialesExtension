@@ -8,14 +8,13 @@ The project uses Manifest V3 and connects to the hosted service at `https://enco
 
 The current package can be loaded as an unpacked extension in these Chromium based desktop browsers.
 
-### 1. Download the extension
+### 1. Download the extension files
 
-1. Open the [GitHub repository](https://github.com/ErSamano/enComercialesExtension).
-2. Choose **Code → Download ZIP**, or [download the main branch ZIP](https://github.com/ErSamano/enComercialesExtension/archive/refs/heads/main.zip).
-3. Extract the ZIP into a folder that you will keep on your computer.
-4. Open the extracted folder and locate **`browser-extension`**, which contains `manifest.json`.
+From this GitHub repository page, click **Code → Download ZIP**. You can also [download the main branch ZIP directly](https://github.com/ErSamano/enComercialesExtension/archive/refs/heads/main.zip).
 
-The browser loads the extension directly from this folder, so do not delete or move it after installation.
+Extract the ZIP into a folder you will keep on your computer. Inside the extracted project, open **`browser-extension`**. This is the folder you will select in your browser because it contains `manifest.json`.
+
+Keep the extracted folder in place after installation; the browser loads the extension from it.
 
 ### 2. Open the extensions page
 
