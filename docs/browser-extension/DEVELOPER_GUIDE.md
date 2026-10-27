@@ -1,6 +1,6 @@
 # Developer guide
 
-The extension uses Manifest V3: `content/` detects and extracts, `stores/adapters.js` holds independent selectors, `background/` is the service worker, `utils/` contains parsing/matching/API/rating logic, and `popup/` renders the small UI. Content scripts send only extracted product data; the popup makes API requests through the worker-compatible shared utility.
+The extension uses Manifest V3: `content/` detects and extracts product data, `stores/adapters.js` holds retailer-specific selectors, `background/` is the service worker, `utils/` contains matching, API, pricing, and state logic, and `popup/` renders the interface. The extension requests price comparisons from the hosted enComerciales HTTPS API.
 
 ```mermaid
 sequenceDiagram
@@ -8,13 +8,13 @@ sequenceDiagram
   participant Content
   participant Worker
   participant API
-  Page->>Content: DOM / JSON-LD
+  Page->>Content: Product details
   Content->>Worker: PRODUCT_DETECTED
-  Worker->>API: search and history
-  API-->>Worker: stats + confidence
-  Worker-->>Page: optional observation
+  Worker->>API: Search and history request
+  API-->>Worker: Match and price data
+  Worker-->>Page: Product state
 ```
 
-To add a store, define its domain and selectors in `stores/adapters.js`, keep selectors scoped to that store, add a fixture, and test name/price extraction. Generic extraction remains the fallback. Do not turn a fuzzy match into `EXACT`; only identifiers such as equal GTIN/SKU justify that level.
+To add a store, define its domain and selectors in `stores/adapters.js`, keep selectors scoped to that store, add a fixture, and verify name and price extraction. Generic extraction remains the fallback. Do not mark a fuzzy match as exact; matching identifiers such as GTIN or SKU provide stronger evidence.
 
-Run JavaScript syntax checks with `node --check` on non-module scripts or load the unpacked extension for module validation. Python API smoke test: `python3 -m py_compile api/server.py`.
+Run the existing JavaScript test suite with `node --test tests/extension/*.test.mjs`. For manual browser testing, load `browser-extension/` as an unpacked extension, refresh a supported product page, and verify both history and no-history states.
