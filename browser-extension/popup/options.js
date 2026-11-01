@@ -80,7 +80,7 @@ async function loadOptions() {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 8000);
     try {
-      const response = await fetch(buildHealthUrl(apiBaseUrl), { signal: controller.signal, headers: { Accept: "application/json" } });
+      const response = await fetch(buildHealthUrl(apiBaseUrl), { redirect: "error", signal: controller.signal, headers: { Accept: "application/json" } });
       const result = await response.json();
       if (!response.ok) throw new Error(`API_${response.status}`);
       setDiagnostic(diagnostic, result);
