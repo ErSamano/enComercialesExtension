@@ -7,7 +7,7 @@
   "host_permissions": ["https://encomerciales.com/*", "https://www.encomerciales.com/*"],
   "background": { "service_worker": "background/background.js", "type": "module" },
   "content_scripts": [{
-    "matches": ["*://*.vinoteca.com/*", "*://*.bodegasalianza.com/*", "*://*.laeuropea.com.mx/*", "*://*.elpalaciodehierro.com/*", "*://*.lacastellana.com/*", "*://*.liverpool.com.mx/*"],
+    "matches": ["https://*.vinoteca.com/*", "https://*.bodegasalianza.com/*", "https://*.laeuropea.com.mx/*", "https://*.elpalaciodehierro.com/*", "https://*.lacastellana.com/*", "https://*.liverpool.com.mx/*"],
     "js": ["content/inject.js"],
     "run_at": "document_idle"
   }],
