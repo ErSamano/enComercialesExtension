@@ -4,6 +4,14 @@ import { historyEvidence } from "./popup-state.js";
 const DEFAULT_API_URL = "https://encomerciales.com/api";
 export const OBSERVATIONS_ENABLED = false;
 
+function isAllowedApiBaseUrl(value) {
+  try {
+    const url = new URL(String(value || ""));
+    return url.protocol === "https:" && !url.username && !url.password &&
+      !url.port && ["encomerciales.com", "www.encomerciales.com"].includes(url.hostname);
+  } catch { return false; }
+}
+
 export function buildApiUrl(apiBaseUrl, path) {
   const parsed = new URL(String(apiBaseUrl || ""));
   parsed.search = "";
@@ -15,7 +23,8 @@ export function buildApiUrl(apiBaseUrl, path) {
 
 export async function getSettings() {
   const values = await chrome.storage.local.get({ apiBaseUrl: DEFAULT_API_URL, debug: false });
-  return { ...values, apiBaseUrl: String(values.apiBaseUrl).replace(/\/$/, "") };
+  const candidate = String(values.apiBaseUrl || DEFAULT_API_URL).replace(/\/$/, "");
+  return { ...values, apiBaseUrl: isAllowedApiBaseUrl(candidate) ? candidate : DEFAULT_API_URL };
 }
 
 const REQUEST_TIMEOUT_MS = 8000;
@@ -29,7 +38,7 @@ async function request(path, options = {}, diagnostic = null) {
   if (options.signal?.aborted) controller.abort();
   let responseReceived = false;
   try {
-    const response = await fetch(endpoint, { ...options, signal: controller.signal, headers: { Accept: "application/json", ...(options.body ? { "Content-Type": "application/json" } : {}), ...options.headers } });
+    const response = await fetch(endpoint, { ...options, redirect: "error", signal: controller.signal, headers: { Accept: "application/json", ...(options.body ? { "Content-Type": "application/json" } : {}), ...options.headers } });
     const body = await response.json();
     responseReceived = true;
     diagnostic?.({ endpoint: new URL(endpoint).pathname, request: Object.fromEntries(new URL(endpoint).searchParams), httpStatus: response.status, apiStatus: body?.status || body?.error || "UNKNOWN", matchConfidence: body?.match?.confidence || body?.products?.[0]?.matchConfidence || null, reasonCode: body?.match?.reasonCode || body?.reasonCode || body?.error || null, identityStatus: body?.match?.identity?.status || null, ...historyEvidence(body) });
