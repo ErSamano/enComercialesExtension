@@ -1,3 +1,4 @@
+import { renderHomePage } from './home-page.js';
 import { analyzeProduct, createAnalysisRunner, productKey, analysisKey } from '../utils/analysis.js';
 import { getSettings } from '../utils/api.js';
 import { renderExtractedProduct, renderPending, renderResult, renderFatal } from './render.js';
@@ -81,6 +82,12 @@ async function loadProduct(lastProduct, { force = false } = {}) {
     }
   }
 }
+// Store home pages show a hint (and a featured product link) instead of analyzing a product.
+function showHomePage(homePage) {
+  runner.invalidate(); controller?.abort(); displayedKey = null; currentProduct = null;
+  renderHomePage(homePage);
+  $('retry').hidden = true;
+}
 async function load({ force = false } = {}) {
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -91,6 +98,7 @@ async function load({ force = false } = {}) {
     try {
       const response = await chrome.tabs.sendMessage(activeTabId, { type: 'GET_PRODUCT' });
       product = response?.product ? { ...response.product, tabId: activeTabId } : null;
+      if (response?.homePage) return showHomePage(response.homePage);
     } catch {
       // Content scripts from an earlier extension version may not support GET_PRODUCT.
       const stored = await chrome.storage.session.get([`product:${activeTabId}`]);
