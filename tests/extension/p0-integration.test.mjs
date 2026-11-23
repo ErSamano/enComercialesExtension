@@ -9,7 +9,8 @@ import { formatCurrency } from '../../browser-extension/utils/currency.js';
 import { ratePrice } from '../../browser-extension/utils/rating.js';
 import { renderPriceHistory } from '../../browser-extension/components/price-history.js';
 import { searchProducts, getProductHistory } from '../../browser-extension/utils/api.js';
-import { renderExtractedProduct, renderPending, renderResult, renderFatal } from '../../browser-extension/popup/render.js';
+import { renderExtractedProduct, renderPending, renderResult, renderFatal, renderSupportedRetailers } from '../../browser-extension/popup/render.js';
+import { SUPPORTED_RETAILERS } from '../../browser-extension/utils/retailers.js';
 const read = name => JSON.parse(fs.readFileSync(new URL(`../../docs/browser-extension/p0-evidence/${name}.json`, import.meta.url)));
 const chivas = read('chivas'), jack = read('jack');
 const clone = value => structuredClone(value);
@@ -180,7 +181,7 @@ test('popup renders, caches, isolates tabs, cancels stale work and survives stor
   const context = { document, chrome, console: { ...console, warn() {} }, AbortController, window: { addEventListener() {} }, getSettings: async () => ({ apiBaseUrl: 'https://encomerciales.com/api' }), analyzeProduct: async (_product, options) => {
     if (++runs === 2) { oldSignal = options.signal; await new Promise(resolve => { finishOld = resolve; }); }
     return goodResult;
-  }, createAnalysisRunner, productKey, analysisKey, renderExtractedProduct, renderPending, renderResult, renderFatal };
+  }, createAnalysisRunner, productKey, analysisKey, renderExtractedProduct, renderPending, renderResult, renderFatal, renderSupportedRetailers, SUPPORTED_RETAILERS };
   const source = fs.readFileSync(new URL('../../browser-extension/popup/popup.js', import.meta.url), 'utf8').replace(/^import .*;\n/gm, '');
   const tick = () => new Promise(resolve => setImmediate(resolve));
   const detect = async value => { storage['product:1'] = value; change({ 'product:1': { newValue: value } }, 'session'); await tick(); };
@@ -224,4 +225,37 @@ test('popup renders, caches, isolates tabs, cancels stale work and survives stor
   assert.match(elements.get('low').textContent, /429/);
   await detect(null);
   assert.equal(elements.get('content').hidden, true);
+  // The page answered, so the tab is on a supported retailer: no store list.
+  assert.equal(elements.get('supported-retailers').hidden, true);
+});
+test('popup lists supported retailers only when the tab is outside them', async () => {
+  class Element {
+    hidden = false; disabled = false; textContent = ''; dataset = {}; children = [];
+    addEventListener() {} append(child) { this.children.push(child); } replaceChildren(...children) { this.children = children; }
+  }
+  const ids = new Set([...fs.readFileSync(new URL('../../browser-extension/popup/popup.html', import.meta.url), 'utf8').matchAll(/id="([^"]+)"/g)].map(match => match[1]));
+  const elements = new Map();
+  globalThis.document = { getElementById(id) { assert.ok(ids.has(id), `Missing popup element: ${id}`); if (!elements.has(id)) elements.set(id, new Element()); return elements.get(id); }, createElement(tagName) { return Object.assign(new Element(), { tagName }); } };
+  const source = fs.readFileSync(new URL('../../browser-extension/popup/popup.js', import.meta.url), 'utf8').replace(/^import .*;\n/gm, '');
+  const open = async sendMessage => {
+    elements.clear();
+    const chrome = { tabs: { async query() { return [{ id: 1 }]; }, sendMessage }, storage: { session: { async get() { return {}; } }, onChanged: { addListener() {} } } };
+    vm.runInNewContext(`{${source}}`, { document: globalThis.document, chrome, console, AbortController, window: { addEventListener() {} }, getSettings: async () => ({}), analyzeProduct: async () => null, createAnalysisRunner, productKey, analysisKey, renderExtractedProduct, renderPending, renderResult, renderFatal, renderSupportedRetailers, SUPPORTED_RETAILERS });
+    await new Promise(resolve => setImmediate(resolve));
+  };
+  // No content script answers outside supported retailers.
+  await open(async () => { throw new Error('Could not establish connection. Receiving end does not exist.'); });
+  assert.match(elements.get('error').textContent, /No se reconoció un producto/);
+  assert.equal(elements.get('supported-retailers').hidden, false);
+  const links = elements.get('supported-retailers-list').children.map(item => item.children[0]);
+  assert.deepEqual(links.map(link => link.textContent), ['Vinoteca', 'Bodegas Alianza', 'La Europea', 'El Palacio de Hierro', 'La Castellana', 'Liverpool']);
+  for (const link of links) {
+    assert.match(link.href, /^https:\/\//);
+    assert.equal(link.target, '_blank');
+    assert.equal(link.rel, 'noopener noreferrer');
+  }
+  // A supported retailer page without a product keeps only the message.
+  await open(async () => ({ product: null }));
+  assert.match(elements.get('error').textContent, /No se reconoció un producto/);
+  assert.equal(elements.get('supported-retailers').hidden, true);
 });

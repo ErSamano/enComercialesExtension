@@ -14,6 +14,7 @@ export function renderExtractedProduct(product) {
   $('advertised-discount').textContent = display.advertisedDiscountPercent !== null ? `Anunciado: ${formatPercent(display.advertisedDiscountPercent)}` : '';
   $('content').hidden = false;
   $('error').hidden = true;
+  $('supported-retailers').hidden = true;
   $('state').hidden = true;
 }
 export function renderPending() {
@@ -76,4 +77,18 @@ export function renderFatal(message) {
   $('content').hidden = true;
   $('error').hidden = false;
   $('error').textContent = message;
+  $('supported-retailers').hidden = true;
+}
+export function renderSupportedRetailers(retailers) {
+  $('supported-retailers-list').replaceChildren(...retailers.map(({ name, url }) => {
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = name;
+    const item = document.createElement('li');
+    item.append(link);
+    return item;
+  }));
+  $('supported-retailers').hidden = retailers.length === 0;
 }

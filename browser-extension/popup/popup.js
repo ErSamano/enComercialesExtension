@@ -1,6 +1,7 @@
 import { analyzeProduct, createAnalysisRunner, productKey, analysisKey } from '../utils/analysis.js';
 import { getSettings } from '../utils/api.js';
-import { renderExtractedProduct, renderPending, renderResult, renderFatal } from './render.js';
+import { renderExtractedProduct, renderPending, renderResult, renderFatal, renderSupportedRetailers } from './render.js';
+import { SUPPORTED_RETAILERS } from '../utils/retailers.js';
 
 const $ = id => document.getElementById(id);
 const runner = createAnalysisRunner();
@@ -9,6 +10,8 @@ let activeTabId = null;
 let displayedKey = null;
 let controller = null;
 let currentProduct = null;
+// Content scripts only run on supported retailers, so an answer from the page means the tab is on one.
+let onSupportedRetailer = false;
 
 function save(values) {
   // Diagnostics/cache failures must never hide an already received result.
@@ -23,6 +26,7 @@ async function loadProduct(lastProduct, { force = false } = {}) {
   if (lastProduct?.tabId !== activeTabId || !lastProduct?.name) {
     runner.invalidate(); controller?.abort(); displayedKey = null; currentProduct = null;
     renderFatal('No se reconoció un producto en esta página. Abre la página de un producto y vuelve a intentar.');
+    if (!onSupportedRetailer) renderSupportedRetailers(SUPPORTED_RETAILERS);
     $('retry').hidden = false;
     $('retry').disabled = false;
     return;
@@ -85,11 +89,13 @@ async function load({ force = false } = {}) {
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     activeTabId = tab?.id ?? null;
+    onSupportedRetailer = false;
     if (activeTabId === null) return loadProduct(null);
     // Ask the page itself: session storage can belong to a previous navigation.
     let product;
     try {
       const response = await chrome.tabs.sendMessage(activeTabId, { type: 'GET_PRODUCT' });
+      onSupportedRetailer = true;
       product = response?.product ? { ...response.product, tabId: activeTabId } : null;
     } catch {
       // Content scripts from an earlier extension version may not support GET_PRODUCT.
