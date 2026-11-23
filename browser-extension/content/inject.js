@@ -33,7 +33,35 @@ function structuredProduct() {
 const SELECTORS = { Vinoteca: { name: ".vtex-product-identifier-0-x-productName, h1", price: ".vtex-product-price-1-x-sellingPriceValue" }, Alianza: { name: "h1, .vtex-store-components-3-x-productNameContainer", price: ".vtex-product-price-1-x-sellingPriceValue" }, "La Europea": { name: "h1, .page-title", price: ".price-box .price, .le-card__price" }, "Palacio de Hierro": { name: "h1, .product-name", price: ".b-product_price-sales .b-product_price-value, .b-product_price-value" }, "La Castellana": { name: "h1, .product__title", price: ".price-item--sale, .price-item--regular" }, Liverpool: { name: "h1, h3.a-card-description", price: ".a-product-price, .a-card-discount, .a-card-price" } };
 const domains = [["vinoteca.com", "Vinoteca"], ["bodegasalianza.com", "Alianza"], ["laeuropea.com.mx", "La Europea"], ["elpalaciodehierro.com", "Palacio de Hierro"], ["lacastellana.com", "La Castellana"], ["liverpool.com.mx", "Liverpool"]];
 const retailer = domains.find(([domain]) => location.hostname === domain || location.hostname.endsWith(`.${domain}`))?.[1] || "Unknown retailer"; const selectors = SELECTORS[retailer]; let lastSignature = "";
+// A store home page lists many products, so a product found there is a featured product, not the page's product.
+const HOME_PATHS = { Liverpool: ["/", "/tienda/home"] };
+function pathOf(url) { return url.pathname.replace(/\/+$/, "") || "/"; }
+function isHomePage() { return (HOME_PATHS[retailer] || ["/"]).includes(pathOf(new URL(location.href))); }
+function featuredProductUrl(value) {
+  if (typeof value !== "string" || !value.trim()) return "";
+  try {
+    const url = new URL(value, location.href);
+    return url.protocol === "https:" && url.hostname === new URL(location.href).hostname && !(HOME_PATHS[retailer] || ["/"]).includes(pathOf(url)) ? url.href : "";
+  } catch { return ""; }
+}
+// Same order as emitProduct: the adapter's name element first, then structured data (VTEX stores put the product URL in @id).
+// Only products with their own link on this store count.
+function featuredProduct() {
+  const element = selectors ? document.querySelector(selectors.name) : null;
+  const elementUrl = featuredProductUrl(element?.closest?.("a[href]")?.getAttribute("href"));
+  if (element?.textContent?.trim() && elementUrl) return { name: element.textContent.trim().slice(0, 300), url: elementUrl };
+  for (const script of document.querySelectorAll('script[type="application/ld+json"]')) {
+    try {
+      const items = [];
+      const visit = (item) => { if (!item || typeof item !== "object") return; if (item["@graph"]) item["@graph"].forEach(visit); if (item.itemListElement) asArray(item.itemListElement).forEach((entry) => visit(entry.item || entry)); if (asArray(item["@type"]).includes("Product")) items.push(item); };
+      visit(JSON.parse(script.textContent));
+      for (const item of items) { const url = featuredProductUrl(item.url) || featuredProductUrl(item["@id"]); if (typeof item.name === "string" && item.name.trim() && url) return { name: item.name.trim().slice(0, 300), url }; }
+    } catch { /* malformed retailer JSON-LD */ }
+  }
+  return null;
+}
 function emitProduct(force = false) {
+  if (isHomePage()) return null;
   const generic = structuredProduct(); const selected = selectedPrice();
   const referenceSelector = ".vtex-product-price-1-x-listPriceValue, .regular-price, .old-price";
   const product = selectors ? { ...generic, name: document.querySelector(selectors.name)?.textContent?.trim() || generic.name, price: selected.chosen || generic.price, salePrice: selected.chosen || generic.salePrice, referencePrice: selected.reference || parseCurrency(document.querySelector(referenceSelector)?.textContent) || generic.referencePrice, priceDiagnostics: selected.priceDiagnostics, shopifyVariantId: selected.shopifyVariantId, extractionMethod: `adapter:${retailer}`, retailer } : { ...generic, price: selected.chosen || generic.price, salePrice: selected.chosen || generic.salePrice, referencePrice: selected.reference || generic.referencePrice, priceDiagnostics: selected.priceDiagnostics, retailer };
@@ -44,7 +72,7 @@ function emitProduct(force = false) {
 }
 emitProduct();
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.type === "GET_PRODUCT") sendResponse({ product: emitProduct(true) });
+  if (message.type === "GET_PRODUCT") sendResponse(isHomePage() ? { product: null, homePage: { featuredProduct: featuredProduct() } } : { product: emitProduct(true) });
 });
 // A trailing debounce can starve forever on pages with continuously changing widgets.
 let mutationTimer = 0;
